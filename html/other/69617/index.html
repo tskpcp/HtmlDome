@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=UTF-8>
+<title>Facebook风格jQuery对话框 - xw素材网</title>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery.fbmodel.js"></script>
+<link rel="stylesheet" type="text/css" href="fbmodal.css" />
+<script type="text/javascript">
+$(function(){
+	
+/*Modal with options*/	
+    $("#open").click( function(){
+        $(".test").fbmodal({
+       okaybutton: true,
+     cancelbutton: true,
+          buttons: true,
+          opacity: 0.0,
+	      fadeout: true,
+     overlayclose: true,
+         modaltop: "30%",
+       modalwidth: "400" 
+        }); 
+    }); 
+/*Using an id to close the Modal*/
+    $("#close").click( function(){
+        $(".test").fbmodal({close:true});
+    });	
+    $("#open3").click( function(){
+        $(".test").fbmodal({
+       okaybutton: true,
+     cancelbutton: true,
+          buttons: true,
+          opacity: 0.35,
+	      fadeout: true,
+     overlayclose: true,
+         modaltop: "30%",
+       modalwidth: "400" 
+        }); 
+    });
+   
+	/*Using a callback function*/
+    $("#open10").click( function(){
+        $(".test").fbmodal({
+        	title:"asdad",
+        	opacity: 0.35,
+            modalwidth: "400"}
+        	,function(callback){
+             if(callback == 1){
+                alert("你点了确定按钮");
+            }
+			if(callback == 2){
+                alert("你点了取消按钮");
+            }
+        });  
+    });
+});	
+</script>
+<style>
+*{margin:0;padding:0;list-style:none;border:none;}
+a {
+	color: #555;
+}
+a:hover {
+	text-decoration: underline;
+}
+#content{text-align:center;font-size:16px;margin-top:10px;font-family:'microsoft yahei';}
+</style>
+</head>
+<body style="height: 800px;">
+<div id="content">
+
+<b>Demo:</b> <a href="javascript:void()" id="open3">Modal 3</a><br />
+Opacity set 35%.<br />
+
+<br />
+<b>Demo:</b> <a href="javascript:void()" id="open10">Modal 10</a><br />
+Using the callback function.<br />
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import url("../../css/common.css");
+@import url("../../css/reset.css");
+.btn_bgc{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background: #ffc52b;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+    *display: inline;
+    *zoom:1;
+	font-size: 14px;
+	cursor:pointer;
+	
+}
+.btn_bgc:hover{color: #fff;text-decoration:none;}
+.btn_border{
+	width: 100px;
+	height: 29px;
+	line-height: 29px;
+	border:1px solid #ffc52b;
+	color: #000;
+	text-align: center;
+	display: inline-block;
+    *display: inline;
+    *zoom:1;
+	font-size: 14px;
+	cursor:pointer;
+	
+}
+.btn_border:hover{color: #000;text-decoration:none;}
+/*圆角*/
+.btn_fillet{
+	width: 100px;
+	height: 29px;
+	line-height: 29px;
+	border:1px solid #ffc52b;
+	color: #000;
+	text-align: center;
+	display: inline-block;
+    *display: inline;
+    *zoom:1;
+	font-size: 14px;
+	cursor:pointer;
+	
+	-moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    -o-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius:15px;            /* W3C syntax */
+}
+.btn_fillet:hover{color: #000;text-decoration:none;}
+.btn_fillet_noborder{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background: #ffc52b;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+    *display: inline;
+    *zoom:1;
+	font-size: 14px;
+	cursor:pointer;
+	
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius:15px;
+}
+.btn_fillet_noborder:hover{color: #fff;text-decoration:none;}
+/*圆角样式编写
+ * 支持上、右、下、左
+
+border-radius:5px 15px 20px 25px;
+支持拆分书写
+
+/* Gecko browsers */
+/*
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-topright: 0;
+-moz-border-radius-bottomleft: 0;
+-moz-border-radius-bottomright: 20px;
+ 
+/* Webkit browsers */
+/*
+-webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 0;
+-webkit-border-bottom-left-radius: 0;
+-webkit-border-bottom-right-radius: 20px;
+ 
+/* W3C syntax */
+/*
+border-top-left-radius: 20px;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+border-bottom-left-radius:  20px;
+ */
+

@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import url("../../css/common.css");
+@import url("../../css/reset.css");
+.tab_title_box {
+	width: 1000px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 100px;
+	background-color:#ffc52b;
+	border: 1px solid #ffc52b;
+	border-bottom: 1px solid #cccccc;
+	cursor: pointer;
+	color: #fff;
+   
+}
+.tab_box_cur{
+	color: #000;
+	border-bottom: 1px solid #ffc52b;
+}
+
+.tab_box_centent {
+	border: #cccccc solid 1px;
+	border-bottom: 1px solid #ffc52b;
+	border-top: 1px solid #ffc52b;
+	width: 999px;
+	height: 100px;
+	margin-left: 101px;
+}
+.tab-box-content-border{
+	border-bottom: 1px solid #cccccc;
+	
+}
