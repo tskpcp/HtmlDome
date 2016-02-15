@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>kindEidtor</title>
+		<style>
+			form {
+				margin: 0;
+			}
+			textarea {
+				display: block;
+			}
+		</style>
+		<link rel="stylesheet" href="kindEditor/themes/default/default.css" />
+		<script charset="utf-8" src="kindEditor/kindeditor-min.js"></script>
+		<script charset="utf-8" src="kindEditor/lang/zh_CN.js"></script>
+		
+	</head>
+	<body>
+		<textarea name="content" style="width:700px;height:200px;visibility:hidden;">KindEditor</textarea>
+	</body>
+	
+	<script>
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]', {
+					resizeType : 1,
+					allowPreviewEmoticons : false,
+					allowImageUpload : false,
+					fileUrl : K('#url').val(),
+							clickFn : function(url, title) {
+								K('#url').val(url);
+								editor.hideDialog();
+							},
+					items : [
+						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+						'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+				});
+
+			});
+		</script>
+</html>

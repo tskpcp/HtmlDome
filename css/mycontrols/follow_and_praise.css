@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url("../../css/common.css");
+@import url("../../css/reset.css");
+.faw_praise,
+.faw_follow{
+	height:21px;
+	line-height: 21px;
+	vertical-align: middle;
+	
+}
+.faw_praise_c,
+.faw_follow_c{
+	height:21px;
+	line-height: 21px;
+	vertical-align: middle;
+	color:#ffc52b;
+}
+.faw_follow i{
+	height:21px; 
+	width:23px;
+	background: url(../../img/gtw_30.png)no-repeat;
+	display: inline-block; 
+	vertical-align: middle;
+	
+	
+}
+.faw_follow_c i{
+	height:21px; 
+	width:23px;
+	background: url(../../img/gtw_30_c.png)no-repeat;
+	display: inline-block; 
+	vertical-align: middle;
+}
+.faw_praise i{
+	height:21px; 
+	width:23px;
+	background: url(../../img/gtw_tg1.png)no-repeat;
+	display: inline-block; 
+	vertical-align: middle;
+}
+.faw_praise_c i{
+	height:21px; 
+	width:23px;
+	background: url(../../img/gtw_tg.png)no-repeat;
+	display: inline-block; 
+	vertical-align: middle;
+}

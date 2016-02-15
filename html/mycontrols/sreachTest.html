@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>dsfdsf</title>
+		<style type="text/css">
+			.h_30{height:30px;}
+			.h_100{height:100px;}
+		</style>
+	</head>
+	<body>
+		<div style="float:left;width:110px; border: 1px solid #000;height:auto;">
+			<p class="h_30" style="overflow:hidden;width:100px; border: 1px solid #000; float:left;">
+			<a>1</a>
+			<a>2</a>
+			<a>3</a>
+			<a>5</a>
+			<a>4</a>
+			<a>6</a>
+			<a>7</a>
+			<a>8</a>
+			<a>9</a>
+			<a>10</a>
+			<a>11</a>
+			<a>12</a>
+			<a>13</a>
+			<a>14</a>
+			<a>15</a>
+			<a>16</a>
+			<a>17</a>
+			<a>18</a>
+			<a>19</a>
+			<a>20</a>
+			<a>21</a>
+			<a>22</a>
+			<a>23</a>
+			<a>24</a>
+			<a>25</a>
+			</p>
+		</div>
+		<div style=" float:left;"><a class="c_more" style="width:100px; height:30px; background-color:#E98506;">更多</a></div>
+		<script src="../../js/jquery-1.9.1.js"  type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.c_more').click(function(){
+					
+					if($('div p').height()<40){
+						
+						$('div p').removeClass('h_30').addClass('h_100');
+						$(this).text("收起");
+					}else{
+						
+						$('div p').removeClass('h_100').addClass('h_30');
+						$(this).text("更多");
+					}
+				});
+			});
+			
+		</script>
+	</body>
+</html>
