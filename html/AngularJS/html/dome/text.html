@@ -7,9 +7,18 @@
 		<title></title>
 	</head>
 	<body>
-		Your name：<input type="text" ng-model="yourname" placeholder="Wold"/>
-		<br>
-		Hello {{yourname || 'World'}}!
+		<ul>
+			<li>
+				Your name：<input type="text" ng-model="yourname" placeholder="Wold"/>
+				<br>
+				Hello {{yourname || 'World'}}!
+			</li>
+			<li >
+				<input ng-model="person.name" type="text" placeholder="Ysername" />
+				<br>
+					Hello {{person.name}}
+			</li>
+		</ul>
 		<div class="mark">
 			本示例演示AngularJS的双向数据绑定（bi-directional data binding）：<br>
                         编辑前面创建的helloworld.html文档。<br>

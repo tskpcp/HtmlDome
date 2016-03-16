@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="app">
 	<head>
 		<meta charset="UTF-8">
 	    <script src="../../js/lib/angular.js"></script>
-	    <script src="../../js/controllers.js"></script> 
+	    
 		<link type="text/css" rel="stylesheet" href="../../css/common.css" media="screen" />
 		<title></title>
 	</head>
-	<body ng-controller="PhoneListCtrl">
-		<ul>
-			<li ng-repeat="phone in phones">
-				{{phone.name}}
-				<p>
-					{{phone.snippet}}
-				</p>
-			</li>
-		</ul>
+	<body >
+		<div ng-controller="MyController">
+			{{clock}}!
+		</div>
+		 
 	</body>
+	<script type="text/javascript">
+function MyController($scope, $timeout) {
+		var updateClock = function() {
+			$scope.clock = new Date();
+			$timeout(function() {
+					updateClock();
+				}, 1000);
+		};
+		updateClock();
+};
+</script>
 </html>
