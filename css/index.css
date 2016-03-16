@@ -2,26 +2,42 @@
 @import url("common.css");
 @import url("reset.css");
 header{
-	height: 40px;
-	background-color: #E5E5E5;
-	line-height: 40px;
+	height: 50px;
+	background-color: #101010;
+	line-height: 50px;
+}
+header h1{ cursor: pointer;color: #999; font-size: 16px; padding-left: 100px;}
+header h1:focus,
+header h1:hover{
+	color: #ffffff;
+    background-color: transparent;
 }
 nav{
 	width:10%; 
     float: left;
 }
-nav ul li:first-child{margin-top: 10px;}
+
 nav ul li{
 	
 	background-color: #E5E5E5;
-	height:30px;
-	line-height: 30px;
-	border:1px solid #1A356E;
-	padding-left: 10px;
+	height:40px;
+	line-height: 40px;
+    text-align: center;
+    font-size: 16px;
 	
 }
-nav ul li:not(:first-child){
-	border-top:none;
+
+nav ul li:hover{
+	background-color:#666666;
+	border-right: #000000 solid 2px;
+	color: #ffffff;
+}
+
+nav ul li a:hover{
+	color: #ffffff;
+}
+nav ul li a{
+	color:#000000;
 }
 section{
 	width:90%; 
