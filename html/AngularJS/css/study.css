@@ -1,3 +1,7 @@
+body{
+	margin:0;
+	padding:0;
+}
 .div1 {
 	width: 1000px;
 	height: 1000px;
@@ -6,8 +10,8 @@
 
 .div2-0 {
 	margin-top: 5px;
-	margin-left: 10px;
-	width: 450px;
+	margin-left: 5px;
+	width: 440px;
 	background-color: #F0A33F;
 	color:#fff;
 	font-size: 16px;
@@ -19,8 +23,8 @@
 .div2,
 .div2-1 {
 	margin-top: 5px;
-	margin-left: 10px;
-	width: 450px;
+	margin-left: 5px;
+	width: 440px;
 	background-color: #e6e6e6;
 	font-size: 12px;
 	line-height: 30px;
@@ -37,8 +41,8 @@
 .div3-0,
 .div3 {
 	margin-top: 5px;
-	margin-left: 10px;
-	width: 446px;
+	margin-left: 5px;
+	width: 436px;
 	border: 2px solid #e6e6e6;
 }
 
