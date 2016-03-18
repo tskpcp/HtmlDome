@@ -1,9 +1,7 @@
-function MyController($scope,$timeout){
-	var updateClock=function(){
-		$scope.clock=new Date();
-		$timeout(function(){
-			updateClock();
-		},1000);
-	};
-	updateClock();
-}
+var app=angular.module('myApp',[]);
+		app.controller('myCtrl',function($scope){
+			$scope.first="1111";
+			$scope.second="22222222";
+		});
+
+

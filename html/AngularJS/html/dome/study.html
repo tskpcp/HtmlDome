@@ -1,27 +1,101 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
 	<head>
 		<meta charset="UTF-8">
 	    <script src="../../js/lib/angular.js"></script>
-	    
+	    <script src="../../js/controllers.js"></script>
+
 		<link type="text/css" rel="stylesheet" href="../../css/common.css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="../../css/study.css" media="screen"/>
 		<title></title>
 	</head>
-	<body >
-		<div ng-controller="MyController">
-			{{clock}}!
+	<body  ng-app="myApp">
+		<div class="fl">
+			<div class="div2">
+				数据绑定实例
+			</div>
+			<div class="div3"  ng-controller="myCtrl">
+			数据：<input type="text" ng-model="first">
+				<br>
+			绑定 : <input type="text" ng-model="second">
+				<br>
+			实例：{{first+" "+second}}
+		    </div>
+		    <!--数据表达式 Start -->
+		    <div class="div2-0">
+				数据表达式
+			</div>
+		<div class="div2-1">
+			AngularJS 表达式写在双大括号内：{{ expression }}。<br>
+			AngularJS 表达式把数据绑定到 HTML，这与 ng-bind 指令有异曲同工之妙。<br>
+			AngularJS 将在表达式书写的位置"输出"数据。<br>
+			AngularJS 表达式 很像 JavaScript 表达式：它们可以包含文字、运算符和变量。<br>
+			实例 "{"{" 5 + 5 "}"}" 或 "{"{" firstName + " " + lastName "}"}"<br>
 		</div>
-		 
+		<div  class="div3-0">
+			我的第一个表达式: {{ 5 + 5 }}
+		</div>
+		<div class="div2">
+			AngularJS 数字;
+			在 ng-init中定义quantity=1和cost=5，计算乘法
+		</div>
+		<div class="div3-0" ng-init="quantity=1;cost=5">
+			<p>总价： {{ quantity * cost }}</p>
+		</div>
+		<div class="div2">
+			使用 ng-bind 的相同实例:在ng-bind中计算quantity*cost
+		</div>
+		<div class="div3-0" ng-init="quantity=1;cost=5">
+		 <p>总价： <span ng-bind="quantity * cost"></span></p>
+		</div>
+		<div class="div2">
+			AngularJS 字符串;
+			AngularJS 字符串就像 JavaScript 字符串：
+		</div>
+		<div class="div3-0" ng-init="firstName='John';lastName='Doe'">
+			<p>{{ firstName + " " + lastName }}</p>
+		</div>
+		<div class="div2">
+			使用 ng-bind 的相同实例
+		</div>
+		<div class="div3-0" ng-init="firstName='John';lastName='Doe'">
+		 <p> <span ng-bind="firstName + ' ' + lastName"></span></p>
+		</div>
+		<div class="div2">
+			AngularJS 对象;
+			AngularJS 对象就像 JavaScript 对象：
+		</div>
+		<div class="div3-0" ng-init="person={firstName:'John',lastName:'Doe'}">
+			<p>{{ person.lastName }}</p>
+		</div>
+		<div class="div2">
+			使用 ng-bind 的相同实例
+		</div>
+		<div class="div3-0" ng-init="person={firstName:'John',lastName:'Doe'}">
+		 <p> <span ng-bind="person.lastName"></span></p>
+		</div>
+		<div class="div2">
+			AngularJS 数组;
+			AngularJS 数组就像 JavaScript 数组：
+		</div>
+		<div class="div3-0" ng-init="points=[1,15,19,2,40]">
+			<p>第三个值为 {{ points[2] }}</p>
+		</div>
+		<div class="div2">
+			使用 ng-bind 的相同实例
+		</div>
+		<div class="div3-0" ng-init="points=[1,15,19,2,40]">
+		 <p>第三个值为 <span ng-bind="points[2]"></span></p>
+		</div>
+	      <!--数据表达式 End -->
+	    </div>
+	    <div class="fl">
+	      <!--AngularJS 指令 Start -->
+	       <div class="div2-0 fl ml460">
+				AngularJS 指令
+			</div>
+	      <!--AngularJS 指令End -->
+	    </div>
 	</body>
-	<script type="text/javascript">
-function MyController($scope, $timeout) {
-		var updateClock = function() {
-			$scope.clock = new Date();
-			$timeout(function() {
-					updateClock();
-				}, 1000);
-		};
-		updateClock();
-};
-</script>
+	
 </html>

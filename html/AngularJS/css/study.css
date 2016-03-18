@@ -1,0 +1,51 @@
+.div1 {
+	width: 1000px;
+	height: 1000px;
+	border: 1px solid #000000;
+}
+
+.div2-0 {
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 450px;
+	background-color: #F0A33F;
+	color:#fff;
+	font-size: 16px;
+	font-weight: bolder;
+	line-height: 30px;
+	height: 30px;
+}
+
+.div2,
+.div2-1 {
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 450px;
+	background-color: #e6e6e6;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.div2 {
+	height: 30px;
+}
+
+.div2-1 {
+	height: 150px;
+}
+
+.div3-0,
+.div3 {
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 446px;
+	border: 2px solid #e6e6e6;
+}
+
+.div3-0 {
+	height: 40px
+}
+
+.div3 {
+	height: 80px
+}
