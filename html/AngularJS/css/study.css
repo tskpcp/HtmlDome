@@ -2,6 +2,10 @@ body{
 	margin:0;
 	padding:0;
 }
+.title2{
+	font-size: 16px;
+	font-weight: bolder;
+}
 .div1 {
 	width: 1000px;
 	height: 1000px;
@@ -21,7 +25,11 @@ body{
 }
 
 .div2,
-.div2-1 {
+.div2-1,
+.div2-2,
+.div2-3,
+.div2-4,
+.div2-200{
 	margin-top: 5px;
 	margin-left: 5px;
 	width: 440px;
@@ -33,19 +41,30 @@ body{
 .div2 {
 	height: 30px;
 }
-
+.div2-200{height:200px}
 .div2-1 {
-	height: 150px;
+	height: 170px;
 }
-
+.div2-2{
+	height:120px
+}
+.div2-3{
+	height:400px
+}
+.div2-4{
+	height:60px
+}
 .div3-0,
+.div3-1,
 .div3 {
 	margin-top: 5px;
 	margin-left: 5px;
 	width: 436px;
 	border: 2px solid #e6e6e6;
 }
-
+.div3-1{
+	height:140px
+}
 .div3-0 {
 	height: 40px
 }
