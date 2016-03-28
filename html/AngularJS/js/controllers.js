@@ -36,8 +36,12 @@ var app=angular.module('myApp',[]);
 			};
 		});
 		app.controller('fpersonCtrl',function($scope){
-		$scope.names=[{name:'1',country:'c'},
-				  {name:'2',country:'o'},
-				  {name:'3',country:'u'}
+		$scope.names=[{name:'1',country:'a'},
+				  {name:'2',country:'c'},
+				  {name:'3',country:'b'}
 				];
-});
+		});
+		app.controller('costCtrl',function($scope){
+			$scope.price=9.99;
+			$scope.quantity=2;
+		});

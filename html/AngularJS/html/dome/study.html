@@ -434,6 +434,52 @@
 			orderBy:根据某个表达式排列数组。<br>
 			uppercase:格式化字符串为大写。<br>
 			</div>
+			<div class="div2" >
+			表达式中添加过滤器
+			</div>
+			<div class="div2-2" >
+			过滤器可以通过一个管道字符（|）和一个过滤器添加到表达式中。<br>
+			(（下面的两个实例，我们将使用前面章节中提到的 person 控制器）)<br>
+			</div>
+			<div class="div2">uppercase 过滤器将字符串格式化为大写</div>
+			<div class="div3-0" ng-controller="personCtrl">
+				<p>姓名为 {{ lastName | uppercase }}</p>
+			</div>
+			<div class="div2">lowercase  过滤器将字符串格式化为大写</div>
+			<div class="div3-0" ng-controller="personCtrl">
+				<p>姓名为 {{ lastName | lowercase  }}</p>
+			</div>			
+			<div class="div2">currency 过滤器将数字格式化为货币格式：</div>
+			<div class="div3" ng-controller="costCtrl">
+				<input type="number" ng-model="quantity">
+				<input type="number" ng-model="price">
+				<p>总价 = {{ (quantity * price) | currency }}</p>
+			</div>
+			<div class="div2">向指令添加过滤器</div>
+			<div class="div2-4">
+				过滤器可以通过一个管道字符（|）和一个过滤器添加到指令中。<br>
+				orderBy 过滤器根据表达式排列数组：
+			</div>
+			<div class="div3" ng-controller="fpersonCtrl">
+				<ul>
+  					<li ng-repeat="x in names | orderBy:'country'">
+    				{{ x.name + ', ' + x.country }}
+  					</li>
+				</ul>
+			</div>
+			<div class="div2">过滤输入</div>
+			<div class="div2-4">
+				输入过滤器可以通过一个管道字符（|）和一个过滤器添加到指令中，该过滤器后跟一个冒号和一个模型名称。<br>
+				filter 过滤器从数组中选择一个子集：
+			</div>
+			<div class="div3-1" ng-controller="fpersonCtrl">
+				<p><input type="text" ng-model="test"></p>
+				<ul>
+  					<li ng-repeat="x in names | filter:test | orderBy:'country'">
+    				{{ (x.name | uppercase) + ', ' + x.country }}
+  					</li>
+				</ul>
+			</div>
 	      <!--AngularJS 过滤器 End -->
 		</div>
 	</body>
