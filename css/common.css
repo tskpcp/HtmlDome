@@ -1,7 +1,11 @@
 /*--global--*/
 em, i { font-style: normal; }
 a,
-a:hover{text-decoration:none;}
+a:hover {
+    text-decoration: none!important;
+    cursor: pointer;
+}
+
 .fl{float:left;}
 .fr{float:right;}
 .none{display: none;}
@@ -10,6 +14,7 @@ a:hover{text-decoration:none;}
 .relative{position: relative;}
 .w{width:1024px; margin:0 auto;}
 .wbor{border:1px solid #cccccc;}
+
 .tl{text-align:left;}
 .tc{text-align: center !important;}
 
@@ -24,13 +29,18 @@ a:hover{text-decoration:none;}
 
 /*--color--*/
 .c-yellow{color:#ffc52b !important;}
-.c-red{color:#f00;}
-.c-aaa{color:#aaa;}
-.c-333{color:#333;}
-.c-666{color:#666;}
+.c-red{color:#f00 !important;}
+.c-aaa{color:#aaa !important;}
+.c-333{color:#333 !important;}
+.c-666{color:#666 !important;}
 .c-999{color:#999 !important;}
 .c-fff{color:#fff !important;}
+/*border*/
+.bt{border-top: solid 1px #e3e3e3 !important;}
+.bt-w{border: solid 1px #fff !important;}
+.bt-bk{border: solid 1px #000 !important;}
 /*none*/
+
 .bb_n{border-bottom:none !important;}
 .bt_n{border-top:none !important;}
 .bt_l{border-left:none !important;}
@@ -109,8 +119,7 @@ a:hover{text-decoration:none;}
 .h_200{height:200px !important;}
 .h_250{height:250px !important;}
 .h_300{height:300px !important;}
-/*border*/
-.bt{border-top: solid 1px #e3e3e3;}
+
 /*none*/
 .none{display: none;}
 .ow{overflow:hidden;}
