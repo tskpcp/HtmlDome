@@ -1,18 +1,18 @@
 $(function(){
 
 });
-head.js("js/skin-select/skin-select.js");
-head.js("js/custom/scriptbreaker-multiple-accordion-1.js", function() {
+head.js("../../js/skin-select/skin-select.js");
+head.js("../../js/custom/scriptbreaker-multiple-accordion-1.js", function() {
 
     $(".topnav").accordionze({
         accordionze: true,
         speed: 500,
-        closedSign: '<img src="img/plus.png">',
-        openedSign: '<img src="img/minus.png">'
+        closedSign: '<img src="../../img/plus.png">',
+        openedSign: '<img src="../../img/minus.png">'
     });
 });
 //TOOL TIP
-head.js("js/tip/jquery.tooltipster.js", function() {
+head.js("../../js/tip/jquery.tooltipster.js", function() {
     $('.tooltip-tip-x').tooltipster({
         position: 'right'
     });
