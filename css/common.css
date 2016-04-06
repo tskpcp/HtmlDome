@@ -30,6 +30,7 @@ a:hover {
 /*--color--*/
 .c-yellow{color:#ffc52b !important;}
 .c-red{color:#f00 !important;}
+.c-green{color:#9cd71b !important;}
 .c-aaa{color:#aaa !important;}
 .c-333{color:#333 !important;}
 .c-666{color:#666 !important;}
@@ -120,7 +121,8 @@ a:hover {
 .h_200{height:200px !important;}
 .h_250{height:250px !important;}
 .h_300{height:300px !important;}
-
+/*--background-color--*/
+.bc-f6{background-color: #f6f6f6;}
 /*none*/
 .none{display: none;}
 .ow{overflow:hidden;}

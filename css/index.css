@@ -3,8 +3,10 @@ body {
 	background-color: #f2f2f2;
 	margin: 0;
 	padding: 0;
+
 }
-a{cursor:pointer;}
+a{cursor:pointer;color:#666;}
+a:hover{color:#666;}
 header {
 	height: 123px;
 }
@@ -28,6 +30,7 @@ header {
 
 .navBox ul,
 .navSubBox ul {
+	padding:0;
 	width: 1020px;
 	margin: 0 auto;
 }
@@ -47,22 +50,25 @@ header {
 }
 
 .navBox>ul>li:nth-child(2) {
-	width: 526px;
+	width: 470px;
 }
 .navBox .navBox-nth2{
 	width:100%;
+	margin:0;
+	padding:0;
 }
 .navBox .navBox-nth2 li{
 	font-size: 14px !important;
 	font-weight: initial !important;
-	width:110px !important;
+	width:90px !important;
 }
 .navBox .navBox-nth2 li:not(:first-child):hover{
 	background-color: #f6f6f6;
 }
 .navBox ul li:nth-child(3) {
-	width: 290px;
+	width: 300px;
 }
+.navBox input[type="text"],
 .navBox input[type="search"]{
 	margin-top:15px;
 	float:left;
@@ -70,11 +76,16 @@ header {
 	width:198px;
 	background-color: #f8f8f8;
 	border:1px solid #eee;
+	box-sizing:border-box;
+	
+	
 	
 }
+.navBox input[type="text"]:focus,
 .navBox input[type="search"]:focus{
-	border:1px solid #9cd71b;
+	border:1px solid #9cd71b !important;
 }
+
 #a-search{
 	margin-top:15px;
 	float:left;
@@ -84,7 +95,7 @@ header {
 	background: url(../img/search.png) no-repeat 50% 50% #9cd71b;
 }
 .navBox>ul>li:last-child {
-	width: 102px;
+	width: 100px;
 }
 .navBox>ul>li:last-child a{
 	float:left;
@@ -95,6 +106,8 @@ header {
 	margin-left:5px;
 	border:1px solid #efefef;
 	display: block;
+	box-sizing:inherit;
+
 }
 .navBox>ul>li:last-child a:hover{
 	border:1px solid #9cd71b;
@@ -103,7 +116,7 @@ header {
 .navSubBox ul li {
 	float: left;
 	list-style: none;
-	width: 102px;
+	width: 98px;
 	text-align: center;
 	line-height: 61px;
 }
@@ -111,6 +124,45 @@ header {
 .navSubBox ul li:hover {
 	background-color: #f6f6f6;
 }
-
-@import url("bootstrap.css");
-@import url("common.css");
+.banner{	
+	margin:20px auto;
+	height:100px;
+	width:1020px;
+	border: 1px solid #000;
+}
+.c-box{
+	margin:20px auto;
+	width:1020px;
+}
+.h-box{
+	width:100%;
+	background-color:#fff;
+	box-shadow: 0 0 2px #efefef;
+	display: block;
+}
+.l-box{
+	width:800px;
+	float:left;
+	background-color:#fff;
+	box-shadow: 0 0 2px #efefef;
+	
+}
+.r-box{
+	width:200px;
+	background-color:#fff;
+	display: inline-block;
+	box-shadow: 0 0 2px #efefef;
+	
+	
+}
+footer{
+	bottom: 0;
+	margin-top:20px;
+	background-color: #fff;
+	border-bottom: 1px solid #efefef;
+	height:200px;
+}
+.footer{
+	width:1020px;
+	margin:0 auto;
+}
