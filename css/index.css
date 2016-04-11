@@ -142,13 +142,14 @@ header {
 }
 .l-box{
 	width:800px;
-	float:left;
+	display: inline-block;
 	background-color:#fff;
 	box-shadow: 0 0 2px #efefef;
 	
 }
 .r-box{
 	width:200px;
+	float:right;
 	background-color:#fff;
 	display: inline-block;
 	box-shadow: 0 0 2px #efefef;

@@ -9,7 +9,7 @@ $(function(){
 			  "</ul></div><!--顶部菜单--><div class='navSubBox'></div>";
 	$('header').html(htheader);
 	
-	var htdata={'data':[{'key':'html/mycontrols/index.html','value':'前端技术'},{'key':2,'value':'产品经理'},{'key':3,'value':'云计算'},{'key':4,'value':'大数据'},{'key':5,'value':'软件设计师'},{'key':6,'value':'VR&AR'},{'key':7,'value':'关系型数据库'}]};
+	var htdata={'data':[{'key':'html/index.html','value':'前端技术'},{'key':2,'value':'产品经理'},{'key':3,'value':'云计算'},{'key':4,'value':'大数据'},{'key':5,'value':'软件设计师'},{'key':6,'value':'VR&AR'},{'key':7,'value':'关系型数据库'}]};
 	subBoxOnClick(htdata);
 	$('.navSubBox').html(htemp);
 	$(".navBox-nth2 li").click(function(){
@@ -24,7 +24,7 @@ $(function(){
 				htdata={'data':[{'key':1,'value':'u-1'},{'key':2,'value':'u-2'},{'key':3,'value':'u-3'},{'key':4,'value':'u-4'},{'key':5,'value':'u-5'},{'key':6,'value':'u-6'},{'key':7,'value':'u-7'}]};				
 				break;				
 			default:
-				htdata={'data':[{'key':'html/mycontrols/index.html','value':'前端技术'},{'key':2,'value':'产品经理'},{'key':3,'value':'云计算'},{'key':4,'value':'大数据'},{'key':5,'value':'软件设计师'},{'key':6,'value':'VR&AR'},{'key':7,'value':'关系型数据库'}]};
+				htdata={'data':[{'key':'html/index.html','value':'前端技术'},{'key':2,'value':'产品经理'},{'key':3,'value':'云计算'},{'key':4,'value':'大数据'},{'key':5,'value':'软件设计师'},{'key':6,'value':'VR&AR'},{'key':7,'value':'关系型数据库'}]};
 				break;
 		}
 		subBoxOnClick(htdata);
