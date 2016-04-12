@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width">
+		<meta name="Keywords" content="技术空间,技术空间,技术空间" />
+        <meta name="Description" content="技术空间,技术空间" />
+		<title>www.haodhaod.com-前端技术-angularjs</title>	
+		<script type="text/jscript" src="../../js/lib/angular.js"></script>
+		<script type="text/jscript" src="../../js/dome/ag_select.js"></script>
+		
+		<link type="text/css" rel="stylesheet" href="../../../../css/bootstrap.css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="../../../../css/common.css" media="screen"/>
+		<link type="text/css" rel="stylesheet" href="../../../../css/index.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" media="screen"/>
+	</head>
+	<body ng-app="myApp">
+		<header>
+		</header>	
+		<div class="banner">
+			1020*100
+		</div>
+		<div class="c-box f14">
+			<ul class="breadcrumb bc-ff">
+				<li><a>前端技术</a><span class="divider"></span></li>
+				<li><a>Angular JS</a><span class="divider"></span></li>
+				<li><a>Select</a></li>
+			</ul>
+		</div>
+		<div class="c-box">
+			<div class="l-box h-300" ng-controller="myCtrlkeyValue">
+				<div class="row ml10">
+					<div class="col-lg-10">
+						你选择的值为在key-value对中的value.value在key-value对中也可以是个对象
+					</div>
+					<div class="col-lg-10">
+						<select  ng-model="selectDatas" ng-options="x for (x,y) in datas"></select>
+						<h5>key:{{selectDatas.key1}}</h5>
+						<h5>value:{{selectDatas.value1}}</h5>
+						<h5>value1:{{selectDatas.value2}}</h5>
+					</div>
+				</div>
+				
+				<div class="row ml10">
+					<div class="col-lg-10">
+						在下拉菜单也可以不使用 key-value 对中的 key , 直接使用对象的属性：
+					</div>
+					<div class="col-lg-10">
+						<select ng-model="selectDatas1" ng-options="y.key1 for (x,y) in datas"></select>
+						<h5>key:{{selectDatas1.key1}}</h5>
+						<h5>value:{{selectDatas1.value1}}</h5>
+						<h5>value1:{{selectDatas1.value2}}</h5>
+					</div>
+				</div>
+				
+			</div>
+			<div class="r-box h_300 ml20">
+				<ul>
+					<li><a href="../../../mycontrols/index.html" target="_blank"><span>自定义效果</span></a></li>
+					<li id="angular"><a href="../index.html" target="_self"><span>AngularJS</span></a></li>
+					<li><a href="../../../bootstrap/html/index.html" target="_blank"><span>bootstrap</span></a></li>
+					<li><a href="" target="_blank"><span>editor</span></a></li>
+					<li><a href="" target="_blank"><span>extjs</span></a></li>
+					<li><a href="" target="_blank"><span>html5</span></a></li>
+					<li><a href="" target="_blank"><span>loading</span></a></li>
+					<li><a href="mylayout/index.html" target="_blank"><span>mylayout</span></a></li>
+					<li><a href="" target="_blank"><span>node</span></a></li>
+					<li><a href="" target="_blank"><span>webgl</span></a></li>
+					
+				</ul>
+			</div>
+			<div class="l-box h-200 mt10 " ng-controller="myCtrlValue">
+				<div class="row ml10">
+					<div class="col-lg-10">
+						<h2>数据源为对象</h2>
+						前面实例我们使用了数组作为数据源，以下我们将数据对象作为数据源。<br>
+						使用对象作为数据源, x 为键(key), y 为值(value):
+					</div>
+					<div class="col-lg-10">
+						<select ng-model="selectedSite" ng-options="x for (x, y) in sites"></select>
+						<h5>你选择的值是: {{selectedSite}}</h5>
+					</div>
+				</div>
+			</div>
+			<div class="l-box h-300 mt10 " ng-controller="myCtrlRepeatOroptions">
+				<div class="row ml10">
+					<div class="col-lg-10">				
+						ng-repeat 指令是通过数组来循环 HTML 代码来创建下拉列表<br>
+						但 ng-options 指令更适合创建下拉列表，它有以下优势：<br>
+						使用 ng-options 的选项的一个对象， ng-repeat 是一个字符串。
+					</div>
+					<div class="col-lg-10">
+						<select ng-model="selectedRepeat">
+						<option ng-repeat="x in sites" value="{{x.url}}">{{x.site}}</option>
+						</select>
+						<h5>你选择的是: {{selectedRepeat}}</h5>
+					</div>
+					<div class="col-lg-10">使用 ng-options 指令，选择的值是一个对象：</div>
+					<div class="col-lg-10">
+				    	<select ng-model="selectedOption" ng-options="x.site for x in sites"></select>
+						<h5>你选择的是: {{selectedOption.site}}</h5>
+						<p>网址为: {{selectedOption.url}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer">
+				footer
+			</div>
+		</footer>	
+	</body>
+	<script type="text/javascript" src="../../../../js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="../../../../js/index.js"></script>
+	<script type="text/javascript" src="../../../../js/mycontrols/index.js"></script>
+	<script type="text/javascript" src="../../js/index.js"></script>
+	
+</html>
+
+
+
+

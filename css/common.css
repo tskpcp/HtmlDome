@@ -42,14 +42,14 @@ a:hover {
 .bt-bk{border: solid 1px #000 !important;}
 /*none*/
 
-.bb_n{border-bottom:none !important;}
-.bt_n{border-top:none !important;}
-.bt_l{border-left:none !important;}
-.bt_r{border-right:none !important;}
-.mt_n{ margin-top:none !important;}
-.mb_n{ margin-bottom:none !important;}
-.ml_n{ margin-left:none !important;}
-.mr_n{ margin-right:none !important;}
+.bb-n{border-bottom:none !important;}
+.bt-n{border-top:none !important;}
+.bt-l{border-left:none !important;}
+.bt-r{border-right:none !important;}
+.mt-n{ margin-top:none !important;}
+.mb-n{ margin-bottom:none !important;}
+.ml-n{ margin-left:none !important;}
+.mr-n{ margin-right:none !important;}
 
 /*--margin-padding--*/
 .mt3{ margin-top: 3px; }
@@ -97,32 +97,35 @@ a:hover {
 .pl130{padding-left: 130px;}
 
 /*--width--*/
-.w_30{width:30px;}
-.w_50{width:50px;}
-.w_100{width:100px !important;}
-.w_110{width:110px;}
-.w_150{width:150px !important;}
-.w_253{width:253px;}
-.w_255{width:255px;}
-.w_310{width:310px;}
-.w_315{width:315px;}
-.w_380{width:380px !important;}
-.w_394{width:394px !important;}
-.w_414{width:414px;}
-.w_450{width:450px;}
-.w_580{width:580px !important;}
-.w_600{width:600px !important;}
+.w-30{width:30px;}
+.w-50{width:50px;}
+.w-100{width:100px !important;}
+.w-110{width:110px;}
+.w-150{width:150px !important;}
+.w-253{width:253px;}
+.w-255{width:255px;}
+.w-310{width:310px;}
+.w-315{width:315px;}
+.w-380{width:380px !important;}
+.w-394{width:394px !important;}
+.w-414{width:414px;}
+.w-450{width:450px;}
+.w-580{width:580px !important;}
+.w-600{width:600px !important;}
 
 /*--height--*/
-.h_50{height:50px !important;}
-.h_90{height:90px !important;}
-.h_100{height:100px !important;}
-.h_150{height:150px !important;}
-.h_200{height:200px !important;}
-.h_250{height:250px !important;}
-.h_300{height:300px !important;}
+.h-50{height:50px !important;}
+.h-90{height:90px !important;}
+.h-100{height:100px !important;}
+.h-150{height:150px !important;}
+.h-200{height:200px !important;}
+.h-250{height:250px !important;}
+.h-300{height:300px !important;}
+.h-400{height:450px !important;}
 /*--background-color--*/
 .bc-f6{background-color: #f6f6f6;}
+.bc-ff{background-color: #fff !important;}
+.bc-f6-bod-ef{background-color: #f6f6f6; border:1px solid #efefef;}
 /*none*/
 .none{display: none;}
 .ow{overflow:hidden;}

@@ -116,7 +116,9 @@ header {
 .navSubBox ul li {
 	float: left;
 	list-style: none;
-	width: 98px;
+	width: auto;
+	padding-left:7px;
+	padding-right:7px;
 	text-align: center;
 	line-height: 61px;
 }
@@ -156,6 +158,11 @@ header {
 	
 	
 }
+.r-box ul,li{margin 0; padding: 0; cursor:pointer;}
+.r-box ul li{ list-style: none; line-height: 30px; font-size: 14px;}
+.r-box ul li a{ margin-left:30px;}
+.r-box ul li:hover{background-color: #f6f6f6; color:#9cd71b;}
+.r-box ul li:hover a{color:#9cd71b;}
 footer{
 	bottom: 0;
 	margin-top:20px;
