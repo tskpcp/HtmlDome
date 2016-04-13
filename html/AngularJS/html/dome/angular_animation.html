@@ -6,13 +6,17 @@
 		<meta name="Keywords" content="技术空间,技术空间,技术空间" />
         <meta name="Description" content="技术空间,技术空间" />
 		<title>www.haodhaod.com-前端技术-angularjs</title>	
-		<script type="text/jscript" src="../../js/lib/angular.js"></script>
-		<script type="text/jscript" src="../../js/dome/ag_animation.js"></script>
-		
 		<link type="text/css" rel="stylesheet" href="../../../../css/bootstrap.css" media="screen" />
 		<link type="text/css" rel="stylesheet" href="../../../../css/common.css" media="screen"/>
 		<link type="text/css" rel="stylesheet" href="../../../../css/index.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="../../css/common.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="../../css/dome.css" media="screen"/>
+		
+		<script type="text/javascript" src="../../js/lib/angular.js"></script>
+		<script type="text/javascript" src="../../js/lib/angular-animate.min.js" ></script>
+		<script type="text/javascript" src="../../../../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../js/dome/ag_animation.js"></script>
+				
 	</head>
 	<body ng-app="myApp">
 		<header>
@@ -28,14 +32,63 @@
 			</ul>
 		</div>
 		<div class="c-box">
-			<div class="l-box h-100" ng-controller="myctrlClick">
-				<div class="row ml10">
-					<div class="col-lg-10">
-						AngularJS 有自己的 HTML 事件指令。<br>
-						ng-click 指令定义了 AngularJS 点击事件。
-					</div>
-				
-				</div>
+			<div class="l-box h-500" ng-controller="myctrlClick">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>指令</th>
+							<th>事件</th>
+							<th>描述</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ngRepeat</td>
+							<td>enter、leave、move</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>ngView</td>
+							<td>enter、leave、move</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>ngRepeat</td>
+							<td>enter、leave</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>ngInclude</td>
+							<td>enter、leave</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>ngSwitch</td>
+							<td>enter、leave</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>ngIf</td>
+							<td>enter、leave</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>ngClass或者class="...."</td>
+							<td>add、remove</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>ngShow</td>
+							<td>add、remove(.ng-class)</td>
+							<td>用于添加或移除 ng-hide class 的值。</td>
+						</tr>
+						<tr>
+							<td>ngHide</td>
+							<td>add、remove</td>
+							<td>用于添加或移除 ng-hide class 的值。</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			<div class="r-box h_300 ml20">
 				<ul>
@@ -51,6 +104,17 @@
 					<li><a href="" target="_blank"><span>webgl</span></a></li>
 					
 				</ul>
+			</div>
+			<div class="l-box h-300">
+				其他指令会在进入 DOM 会添加 ng-enter 类，移除 DOM 会添加 ng-leave 属性。<br>
+				当 HTML 元素位置改变时，ng-repeat 指令同样可以添加 ng-move 类 。<br>
+				此外， 在动画完成后，HTML 元素的类集合将被移除。例如： ng-hide 指令会添加一下类：<br>
+				ng-animate<br>
+				ng-hide-animate<br>
+				ng-hide-add (如果元素将被隐藏)<br>
+				ng-hide-remove (如果元素将显示)<br>
+				ng-hide-add-active (如果元素将隐藏)<br>
+				ng-hide-remove-active (如果元素将显示)<br>
 			</div>
 		</div>
 		<footer>
