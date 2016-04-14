@@ -1,7 +1,6 @@
 @charset "utf-8";
-@import url("../../css/common.css");
-@import url("../../css/reset.css");
-.btn_bgc{
+
+.btn-bgc{
 	width: 100px;
 	height: 30px;
 	line-height: 30px;
@@ -15,8 +14,8 @@
 	cursor:pointer;
 	
 }
-.btn_bgc:hover{color: #fff;text-decoration:none;}
-.btn_border{
+.btn-bgc:hover{color: #fff;text-decoration:none;}
+.btn-border{
 	width: 100px;
 	height: 29px;
 	line-height: 29px;
@@ -30,9 +29,9 @@
 	cursor:pointer;
 	
 }
-.btn_border:hover{color: #000;text-decoration:none;}
+.btn-border:hover{color: #000;text-decoration:none;}
 /*圆角*/
-.btn_fillet{
+.btn-fillet{
 	width: 100px;
 	height: 29px;
 	line-height: 29px;
@@ -51,8 +50,8 @@
     -ms-border-radius: 15px;
     border-radius:15px;            /* W3C syntax */
 }
-.btn_fillet:hover{color: #000;text-decoration:none;}
-.btn_fillet_noborder{
+.btn-fillet:hover{color: #000;text-decoration:none;}
+.btn-fillet-noborder{
 	width: 100px;
 	height: 30px;
 	line-height: 30px;
@@ -69,7 +68,7 @@
     -webkit-border-radius: 15px;
     border-radius:15px;
 }
-.btn_fillet_noborder:hover{color: #fff;text-decoration:none;}
+.btn-fillet-noborder:hover{color: #fff;text-decoration:none;}
 /*圆角样式编写
  * 支持上、右、下、左
 

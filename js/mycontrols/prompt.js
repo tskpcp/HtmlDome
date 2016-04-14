@@ -21,8 +21,8 @@
 	             btnCancel:false
  	         };
        var options = $.extend(defaults, options);
-       if(!$("#prompt").hasClass(".prompt_body")){
-    	   $("body").append(' <div id="prompt" class="prompt_body"></div>');
+       if(!$("#prompt").hasClass(".prompt-body")){
+    	   $("body").append(' <div id="prompt" class="prompt-body"></div>');
        }
         $("#prompt").css("height",getPageSize()[1]);
        var box =220;

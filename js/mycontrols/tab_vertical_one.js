@@ -1,11 +1,11 @@
- $(".tab_title_box").click(function(){
+ $(".tab-title-box").click(function(){
 		  
-		  $(this).addClass("tab_box_cur").siblings("div").removeClass("tab_box_cur");
+		  $(this).addClass("tab-box-cur").siblings("div").removeClass("tab-box-cur");
 		  if( $(this).next().is(":hidden")){
 		  	$(this).next().show();
 		  }else{
 		  	$(this).next().hide();
-		  	$(this).removeClass("tab_box_cur");
+		  	$(this).removeClass("tab-box-cur");
 		  }
 
 	});
