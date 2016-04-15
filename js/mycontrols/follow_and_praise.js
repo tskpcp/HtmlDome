@@ -23,21 +23,21 @@
         
 		if(options.fsysType==0){
 			
-			if($(options.controllID).hasClass("faw_follow")){
+			if($(options.controllID).hasClass("faw-follow")){
 				fwHtml='<i></i><span>关注('+parseInt(options.num+1)+')</span>';
-				thisClass='faw_follow_c';
+				thisClass='faw-follow-c';
 			}else{
 				fwHtml='<i></i><span>关注('+parseInt(options.num-1)+')</span>';
-				thisClass='faw_follow';
+				thisClass='faw-follow';
 			}
 		}
 		if(options.fsysType==1){
-			if($(options.controllID).hasClass("faw_praise")){
+			if($(options.controllID).hasClass("faw-praise")){
 				fwHtml='<i></i><span>点赞('+parseInt(options.num+1)+')</span>';
-				thisClass='faw_praise_c';
+				thisClass='faw-praise-c';
 			}else{
 				fwHtml='<i></i><span>点赞('+parseInt(options.num-1)+')</span>';
-				thisClass='faw_praise';
+				thisClass='faw-praise';
 			}
 		}
 		$(options.controllID).empty().html(fwHtml);

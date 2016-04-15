@@ -21,8 +21,8 @@
 	             btnCancel:false
  	         };
        var options = $.extend(defaults, options);
-       if(!$("#popup").hasClass(".pop_body")){
-    	   $("body").append(' <div id="popup" class="pop_body"></div>');
+       if(!$("#popup").hasClass(".pop-body")){
+    	   $("body").append(' <div id="popup" class="pop-body"></div>');
        } 
 	}
 })(jQuery); 

@@ -87,8 +87,8 @@
        $(".prompt-content ul li i").addClass(iclass);
        $(".prompt-content ul li p").addClass(pfontclass);
        if(options.ccontent.length>18){
-       		$(".prompt-content ul li p").css("width","280px");
-       		$(".prompt-content ul").css("padding-top","10px");
+       		$(".prompt-content ul li p").css({"width":"280px","size":"12px"});
+       		$(".prompt-content ul").css({"padding-top":"10px","margin-left":"25px"});
        }
        
        $("#prompt-btn-ok").addClass(okeyclass);
