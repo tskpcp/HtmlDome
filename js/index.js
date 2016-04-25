@@ -1,6 +1,6 @@
 $(function(){
-	var htheader="<div class='navBox'><ul><li>技术空间</li><li><ul class='navBox-nth2'>"+
-			  "<li><a><span id='0'>首页</span></a></li>"+
+	var htheader="<div class='navBox'><ul><li>好得网</li><li><ul class='navBox-nth2'>"+
+			  "<li><a href='http://www.haodhaod.com/'><span id='0'>首页</span></a></li>"+
 			  "<li><a><span id='b'>blog</span></a></li>"+
 			  "<li><a><span id='a'>baout me</span></a></li>"+
 			  
