@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width">
+		<meta name="Keywords" content="技术空间,技术空间,技术空间" />
+        <meta name="Description" content="技术空间,技术空间" />
+		<title>www.haodhaod.com-前端技术-angularjs</title>	
+		<script type="text/javascript" src="../../js/lib/angular.js"></script>
+		<script type="text/javascript" src="../../js/lib/angular-route.js"></script>
+		<script type="text/javascript" src="../../js/dome/ag_route.js"></script>
+		
+		<link type="text/css" rel="stylesheet" href="../../../../css/bootstrap.css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="../../../../css/common.css" media="screen"/>
+		<link type="text/css" rel="stylesheet" href="../../../../css/index.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" media="screen"/>
+	</head>
+	<body ng-app="myApp">
+		<header>
+		</header>	
+		<div class="banner">
+			1020*100
+		</div>
+		<div class="c-box f14">
+			<ul class="breadcrumb bc-ff">
+				<li><a>前端技术</a><span class="divider"></span></li>
+				<li><a>Angular JS</a><span class="divider"></span></li>
+				<li><a>路由</a></li>
+			</ul>
+		</div>
+		<div class="c-box">
+			<div class="l-box h-150">
+				通过 AngularJS 可以实现多视图的单页Web应用（single page web application，SPA）。<br>
+				通常我们的URL形式为 http://runoob.com/first/page，但在单页Web应用中 AngularJS 通过 # + 标记 实现，<br>
+				http://runoob.com/#/first<br>
+				http://runoob.com/#/second<br>
+				http://runoob.com/#/third<br>
+			</div>
+			<div class="r-box h_300 ml20">
+				<ul>
+					<li><a href="../../../mycontrols/index.html" target="_blank"><span>自定义效果</span></a></li>
+					<li id="angular"><a href="../index.html" target="_self"><span>AngularJS</span></a></li>
+					<li><a href="../../../bootstrap/html/index.html" target="_blank"><span>bootstrap</span></a></li>
+					<li><a href="" target="_blank"><span>editor</span></a></li>
+					<li><a href="" target="_blank"><span>extjs</span></a></li>
+					<li><a href="" target="_blank"><span>html5</span></a></li>
+					<li><a href="" target="_blank"><span>loading</span></a></li>
+					<li><a href="mylayout/index.html" target="_blank"><span>mylayout</span></a></li>
+					<li><a href="" target="_blank"><span>node</span></a></li>
+					<li><a href="" target="_blank"><span>webgl</span></a></li>
+					
+				</ul>
+			</div>
+			<div class="l-box h-300 mt10 f12">
+				AngularJS 模块的 config 函数用于配置路由规则。通过使用 configAPI，我们请求把$routeProvider注入到我们的配置函数并且使用$routeProvider.whenAPI来定义我们的路由规则。<br>
+				$routeProvider 为我们提供了 when(path,object) & otherwise(object) 函数按顺序定义所有路由，函数包含两个参数:<br>
+				第一个参数是 URL 或者 URL 正则规则。<br>
+				第二个参数是路由配置对象。<br>
+				路由设置对象<br>
+				AngularJS 路由也可以通过不同的模板来实现。<br>
+				$routeProvider.when 函数的第一个参数是 URL 或者 URL 正则规则，第二个参数为路由配置对象。<br>
+				路由配置对象语法规则如下：<br>
+				$routeProvider.when(url, {<br>
+    				template: string,<br>
+    				templateUrl: string,<br>
+    				controller: string, function 或 array,<br>
+    				controllerAs: string,<br>
+    				redirectTo: string, function,<br>
+    				resolve: object<key, function><br>
+				});<br>
+			</div>
+			<div class="l-box h-500 mt10 f12">
+				参数说明：<br>
+				template:<br>如果我们只需要在 ng-view 中插入简单的 HTML 内容，则使用该参数：<br>
+				.when('/computers',{template:'这是电脑分类页面'})<br>
+				templateUrl:<br>如果我们只需要在 ng-view 中插入 HTML 模板文件，则使用该参数：<br>
+				$routeProvider.when('/computers', {<br>
+    				templateUrl: 'views/computers.html',<br>
+				});<br>
+				以上代码会从服务端获取 views/computers.html 文件内容插入到 ng-view 中。<br>
+				controller:<br>function、string或数组类型，在当前模板上执行的controller函数，生成新的scope。<br>
+				controllerAs:<br>string类型，为controller指定别名。<br>
+				redirectTo:<br>重定向的地址。<br>
+				resolve:<br>指定当前controller所依赖的其他模块。<br>
+			</div>
+			<div class="l-box h-50 mt10 f16">
+				实例
+			</div>
+			<div class="l-box h-100 mt10 f12">
+				
+			</div>
+		</div>
+		<footer>
+			<div class="footer">
+				footer
+			</div>
+		</footer>	
+	</body>
+	<script type="text/javascript" src="../../../../js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="../../../../js/index.js"></script>
+	<script type="text/javascript" src="../../../../js/mycontrols/index.js"></script>
+	<script type="text/javascript" src="../../js/index.js"></script>
+	
+</html>
+
+
+
+
