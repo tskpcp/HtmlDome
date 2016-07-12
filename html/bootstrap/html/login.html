@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../../../js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<title>bootstrap学习</title>
+	</head>
+	<body>
+		<!--创建导航栏-->
+		<!--navbar-fixed-top 导航固定，在最底部设置高度范围<div style="height: 1500px;"></div>-->
+		<nav class="nav navbar-default navbar-fixed-top" rloe="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<!--隐藏按钮-->
+					<button class="navbar-toggle" data-toggle="collapse" data-targer=".navbar-collapse">
+						<!--显示横杠-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand"><img src="../../../img/image/1.jpg" style="height: 50px; margin-top:-15px;"></img></a>
+				</div>
+				<!-- 响应式设定-->
+				<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">下来列表<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<!--多级下拉菜单-->
+							<li >
+								<a href="#">菜单一</a>
+								
+							</li>
+							<li class="divider"></li>
+							<li><a href="#">菜单二</a></li>
+							<li class="divider"></li>
+							<li><a href="#">菜单三</a></li>
+							<li class="divider"></li>
+							<li><a href="#">菜单四</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="navbar-form navbar-right">
+					<a href="#" class="navbar-link">登录</a>
+					<a href="#" class="navbar-link">注册</a>
+					<input type="text" class="form-control" placeholder="请输入关键字" />
+					<button class="btn btn-primary">搜索</button>
+				</div>
+				</div>
+			</div>
+		</nav>
+		<div style="height:50px;"></div>
+		<div class=" container">
+			<h1 class="page-header">
+				<!--字形图标制作-->
+				<span class="glyphicon glyphicon-user"></span>
+				用户登录</h1>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<div class="col-md-5">
+						<input type="text" class="form-control" placeholder="请输入用户名"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-5">
+						<input type="password" class="form-control" placeholder="请输入密码"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-5">
+						<button class="btn btn-primary">登录</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--网格系统-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<ul id="11tabs" class="nav nav-tabs">
+						<li class="active">
+							<a href="#11" data-toggle='tab'>11</a>
+						</li>
+						<li>
+							<a href="#22" data-toggle='tab'>22</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<!--active 默认选中 -->
+						<!--fade in 闪动效果 -->
+						<div class="tab-pane fade in active" id="11">
+							<p><a href="#">11</a><span class="pull-right">2016-07-11</span></p>
+							<p><a href="#">11</a><span class="pull-right">2016-07-11</span></p>
+							<p><a href="#">11</a><span class="pull-right">2016-07-11</span></p>
+							<p><a href="#">11</a><span class="pull-right">2016-07-11</span></p>
+							<p><a href="#">11</a><span class="pull-right">2016-07-11</span></p>
+							<p><a href="#">11</a><span class="pull-right">2016-07-11</span></p>
+						</div>
+						<div class="tab-pane fade" id="22">
+							<p><a href="#">22</a><span class="pull-right">2016-07-11</span></p>
+							<p><a href="#">22</a><span class="pull-right">2016-07-11</span></p>
+							<p><a href="#">22</a><span class="pull-right">2016-07-11</span></p>
+							<p><a href="#">22</a><span class="pull-right">2016-07-11</span></p>
+							<p><a href="#">22</a><span class="pull-right">2016-07-11</span></p>
+							<p><a href="#">22</a><span class="pull-right">2016-07-11</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<!-- 缩略图-->
+					<ul class="breadcrumb">
+						<li><a href="#">1</a></li>
+						<li><a href="#" class="text-muted">2</a></li>
+					</ul>
+				</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="../../../img/image/1.jpg">
+					<div class="caption">
+						<h3>
+							<a>描述文件</a>
+						</h3>
+						<p>描述说明</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="../../../img/image/1.jpg">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="../../../img/image/1.jpg">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="col-md-6">
+					<div class="thumbnail">
+						<img src="../../../img/image/1.jpg">
+					</div>
+					<div class="caption">
+						<h3>
+							<a>描述文件</a>
+						</h3>
+						<p>描述说明</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="page-header">
+						<h2>描述说明</h2>
+					</div>
+					<p>描述说明</p>
+				</div>
+			</div>
+			</div>
+		</div>		
+		<div style="height: 1500px;"></div>
+	</body>
+	<script type="text/javascript">
+		//$('#11tabs a[href="#22"]').tab('show');
+		//$('#11tabs a:first').tab('show');
+		//$('#11tabs a:last').tab('show');
+		//$('#11tabs li:eq(0) a').tab('show');
+		//动态加载显示内容
+		$('#11tabs').on('shown.bs.tab',function(e){
+			//var text=$(e.target).text();
+			//alert(text);
+			var text=$(e.target).attr('href');
+			//获取前一个内容
+			var txt=$(e.relatedTarget).attr('href');
+			
+			$(text).html($(txt).html());
+		});
+	</script>
+	
+</html>
