@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>XXXXX</title>
+<link rel="stylesheet" href="jquery.fullPage.css">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.0.0.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$.fn.fullpage({
+		verticalCentered: false,
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+		navigation: true,
+		navigationTooltips: ['个人信息', '个人介绍', '求职意向', '学习经历', '工作经历', '项目经历', '其他']
+	});
+});
+</script>
+</head>
+<body>
+<div class="section section1">
+	
+	个人信息
+</div>
+
+<div class="section section2">
+	个人介绍	
+</div>
+
+<div class="section section3">
+	求职意向
+</div>
+
+<div class="section section4">
+	学习经历
+</div>
+<div class="section section5">
+	工作经历
+</div>
+<div class="section section6">
+	项目经历
+</div>
+<div class="section section7">
+	其他
+</div>
+
+
+</body>
+</html>
