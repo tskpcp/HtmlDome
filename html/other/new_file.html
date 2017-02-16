@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type=" text/javascript" language="JavaScript" src="../../js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" language="JavaScript">
+			$(function(){
+				//快速排序
+				function quickSort(arry){
+					if(arry.length<=1){
+						return arry;
+					}else{
+						var num=Math.floor(arry.length/2);
+						var numValue=arry.splice(num,1);//找到中间数的值
+						var left=[];
+						var right=[];
+						for(var i=0;i<arry.length;i++){
+							if(arry[i]<numValue){
+								left.push(arry[i]);
+							}else{
+								right.push(arry[i]);
+							}
+						}
+						return quickSort(left).concat([numValue],quickSort(right));//递归不断重复比较
+					}
+				}
+				//alert(quickSort([32,45,37,16,2,87]));
+				//归并排序
+				//算法一
+				function mergeSort(arr){
+					if(arr.length<2){
+						return;
+					}
+					var step=1;
+					var left,right;
+					while(step>arr.length){
+						left=0;
+						right=step;
+						while(right+step<=arr.length){
+							mergeArray(arr,left,left+step,rgiht,rgiht+step);
+							left=rgiht+step;
+							rgiht=left+step;
+						}
+						if(rgith<arr.length){
+							mergeArray(arr,left,left+step,right,right+step);
+						}
+						step*=2;
+					}
+				}
+				function mergeArray(arr,startLeft,stopLeft,startRight,stopRight){
+					var rightArr=new Array(stopRight-startRight+1);
+					var leftArr=new Array(stopLeft-startLeft+1);
+					var  k=startRight;
+					
+					for(var i=0;i<(rgihtArr.length-1);++i){
+						rgihtArr[i]=arr[k];
+						++k;
+					}
+					k=startLeft;
+					for(var i=0;i<(leftArr.length-1);++i){
+						leftArr[i]=arr[k];
+						++k;
+					}
+					rightArr[rightArr.length-1]=Infinity;//哨兵值;
+					leftArr[leftArr.length-1]=Infinity;//哨兵值；
+					var m=0;
+					var n=0;
+					for(var k=startLeft;k<stopRight;++k){
+						if(leftArr[m]<=rightArr[n]){
+							arr[k]=leftArr[m];
+							m++;
+						}
+						else{
+							arr[k]=rgihtArr[n];
+							n++;
+						}
+					}
+					return arr;
+				}
+				//算法二
+				function merge(left,right){
+					var re=[];
+					while(left.length>0 && right.length>0){
+						if(left[0]<right[0]){
+							re.push(left.shift());
+						}else{
+							re.push(right.shift());
+						}
+					}
+					return re.concat(left).concat(right);
+				}
+				function mergeSortT(array){
+					if(array.length==1)return array;
+					 /* 首先将无序数组划分为两个数组 */
+					var mid=Math.floor(array.length/2);
+					var left=array.slice(0,mid);
+					var right=array.slice(mid);
+					/* 递归分别对左右两部分数组进行排序合并 */
+					 return merge(mergeSortT(left), mergeSortT(right));
+				}
+				//alert(mergeSortT([32,45,37,16,2,87]));
+				//选择排序
+				function selectSort(array){
+					var arr=array;
+					function sort(){
+						length=arr.length;
+						for(var i=0;i<length;i++){
+							_min=arr[i];
+							k=i;
+							for(var j=i+1;j<length;j++){
+								if(_min<arr[j]){
+									_min=arr[j];
+									k=j;
+								}
+							}
+							arr[k]=arr[i];
+							arr[i]=_min;
+						}
+						return arr;
+					}
+					return {sor:sort};
+				}
+				alert(selectSort([32,45,37,16,2,87]).sor());
+			});
+			
+		</script>
+	<body>
+	</body>
+</html>
