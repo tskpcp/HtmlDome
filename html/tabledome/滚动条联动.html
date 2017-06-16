@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*Table样式，无关紧要*/
+			
+			#MyTable {
+				width: 500px;
+				height: 250px;
+				border-collapse: collapse;
+				border-spacing: 0;
+				border: solid 1px;
+			}
+			
+			#MyTable td {
+				border: solid 1px;
+				align: center;
+			}
+			/*冻结首行的样式*/
+			
+			.freezeTr {
+				background-color: #999;
+				z-index: 10;
+				/*定位，必定位*/
+				position: relative;
+				/*通过某种机制，时该执行，IE8不在支持，关键语句*/
+				/*top:expression($("#OutDiv").scrollTop());*/
+			}
+			/*冻结列的样式*/
+			
+			.freezeTd {
+				background-color: #999;
+				z-index: 9;
+				/*相对定位，不会乱，绝对定位会乱*/
+				position: relative;
+				/*通过某种机制，时该执行，IE8不在支持，关键语句*/
+				/*left:expression($("#OutDiv").scrollLeft());*/
+			}
+			#OutDiv{
+				width:300px;
+				height:200px;
+				/*overflow-x:scroll; 
+				overflow-y: hidden;*/
+				overflow:scroll;
+				display: inline-block;
+			}
+			#tablediv{
+				/*border: solid 1px #000000;*/
+			}
+			#overflowy{
+				
+				display: inline-block;
+			}
+		</style>
+		<script type="text/javascript" src="../../js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$("#topDiv").css("overflow-x", "scroll").height(16).width($("#OutDiv").width());
+				$("#topDiv").html($("#OutDiv").html());
+				$("#topDiv").scroll(function() {
+					$("#OutDiv")[0].scrollLeft = $("#topDiv")[0].scrollLeft; //拉动DIV2层滚动条，DIV1层滚动条同步被改变
+				});
+				$("#OutDiv").scroll(function() {
+					$("#topDiv")[0].scrollLeft = $("#OutDiv")[0].scrollLeft; //拉动DIV2层滚动条，DIV1层滚动条同步被改变
+				});
+				
+//				$("#overflowy").css("overflow-y", "scroll").width(16).height($("#OutDiv").height());
+//				$("#overflowy").html($("#OutDiv").html());
+//				$("#overflowy").scroll(function(){
+//					$("#tablecontent")[0].scrollTop = $("#overflowy")[0].scrollTop;
+//				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="tablediv">
+			<div id="topDiv"></div>
+			<div id="OutDiv" >
+				<table id="MyTable">
+					<thead>
+					<tr class="freezeTr">
+						<td class="freezeTd">col1</td>
+						<td>col2</td>
+						<td>col3</td>
+						<td>col4</td>
+						<td>col5</td>
+						<td>col6</td>
+						<td>col7</td>
+						<td>col8</td>
+						<td>col9</td>
+						<td>col10</td>
+					</tr>
+					</thead>
+					<div id="tablecontent">
+					<tbody>
+					<tr>
+						<td class="freezeTd">row1*col1</td>
+						<td>row1*col2</td>
+						<td>row1*col3</td>
+						<td>row1*col4</td>
+						<td>row1*col5</td>
+						<td>row1*col6</td>
+						<td>row1*col7</td>
+						<td>row1*col8</td>
+						<td>row1*col9</td>
+						<td>row1*col10</td>
+					</tr>
+					<tr>
+						<td class="freezeTd">row2*col1</td>
+						<td>row2*col2</td>
+						<td>row2*col3</td>
+						<td>row2*col4</td>
+						<td>row2*col5</td>
+						<td>row2*col6</td>
+						<td>row2*col7</td>
+						<td>row2*col8</td>
+						<td>row2*col9</td>
+						<td>row2*col10</td>
+					</tr>
+					<tr>
+						<td class="freezeTd">row3*col1</td>
+						<td>row3*col2</td>
+						<td>row3*col3</td>
+						<td>row3*col4</td>
+						<td>row3*col5</td>
+						<td>row3*col6</td>
+						<td>row3*col7</td>
+						<td>row3*col8</td>
+						<td>row3*col9</td>
+						<td>row3*col10</td>
+					</tr>
+					<tr>
+						<td class="freezeTd">row4*col1</td>
+						<td>row4*col2</td>
+						<td>row4*col3</td>
+						<td>row4*col4</td>
+						<td>row4*col5</td>
+						<td>row4*col6</td>
+						<td>row4*col7</td>
+						<td>row4*col8</td>
+						<td>row4*col9</td>
+						<td>row4*col10</td>
+					</tr>
+					<tr>
+						<td class="freezeTd">row5*col1</td>
+						<td>row5*col2</td>
+						<td>row5*col3</td>
+						<td>row5*col4</td>
+						<td>row5*col5</td>
+						<td>row5*col6</td>
+						<td>row5*col7</td>
+						<td>row5*col8</td>
+						<td>row5*col9</td>
+						<td>row5*col10</td>
+					</tr>
+					</tbody>
+					</div>
+				</table>
+			</div>
+			<!--<div id="overflowy"></div>-->
+		</div>
+	</body>
+
+</html>
